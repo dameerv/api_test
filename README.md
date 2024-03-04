@@ -22,5 +22,12 @@ Api должно обеспечивать
 Проект оформить в виде публичного  репозитория на доступных площадках или в виде архива.
 
 ## Запуск.
-``
+1.  `git clone git@github.com:dameerv/api_test.git`
+2. `cd api_test`
+3. `docker-compose up -d`
+4. Установитье переменные в файле .env.local (ENV и DATABASE_URL)
+5. `sudo chown -R 33:33 ./app`
+6. `sudo chmod g+s ./app`
+4. `docker-compose exec api_test_app composer install`
 
+Доступ http://localhost/api
